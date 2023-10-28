@@ -10,11 +10,24 @@
         margin: 0 auto;
         border: 1px solid black;
         width: fit-content;
-        padding-bottom: 60px;
-        padding-right: 60px;
+        padding-bottom: 200px;
+        padding-right: 200px;
         padding-left: 20px;
         margin-top: 20px;
+        position: relative;
     }
+    .btn{
+    font-size: small;
+    margin-top: 10px;
+    color: white;
+    background-color: #76a5af;
+    padding: 5px 25px;
+    border: 3px solid black;
+    box-shadow: 3px 3px black;
+    position: absolute;
+    right: 600px;
+    top: 300px;
+}
 </style>
 <body>
     <div class="container">
@@ -37,7 +50,7 @@
                 <td>{{comment}}</td>
             </tr>
         </table>
-        <button>Go Back</button>
     </div>
+    <button class="btn">Go Back</button>
 </body>
 </html>
