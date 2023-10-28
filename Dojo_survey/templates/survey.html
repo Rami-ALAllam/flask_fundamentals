@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        margin: 0 auto;
+        border: 1px solid black;
+        width: fit-content;
+        padding: 25px;
+        margin-top: 20px;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="/users" method="post">
+            <p>Your Name:
+                <input type="'text" name="name">
+            </p>
+            <p>Dojo Location:
+                <select name="city" id="city">
+                    <option>San jose</option>
+                    <option>Texas</option>
+                    <option>Chicago</option>
+                </select>
+            </p>
+            <p>Favourite Language:
+                <select name="lang" id="lang">
+                    <option>English</option>
+                    <option>Arabic</option>
+                    <option>Greek</option>
+                </select>
+            </p>
+            <div>Comment (optional):</div>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+            <div>
+                <button>Button</button>
+            </div>
+            
+        </form>
+    </div>
+</body>
