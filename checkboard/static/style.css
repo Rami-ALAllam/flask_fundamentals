@@ -1,0 +1,13 @@
+.red{
+    border: 1px solid black;
+    width: 50px;
+    min-height: 50px;
+}
+.black{
+    border: 1px solid black;
+    width: 50px;
+    min-height: 50px;
+}
+.row{
+    display: flex;
+}

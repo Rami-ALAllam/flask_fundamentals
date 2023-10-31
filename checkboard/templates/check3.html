@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<style>
+    .red{
+    background-color: red;
+    }
+    .black{
+    background-color: black;
+    }
+</style>
+
+<body>
+    {%for r in range (y):%}
+        <div class="row">
+            {%for i in range (x):%}
+                {%if (i+r)%2==0 :%}
+                    <div class ="red"></div>
+                {%else:%}
+                    <div class ="black"></div>
+                {%endif%}
+            {%endfor%}
+        </div>
+    {%endfor%}
+</body>
+
+</html>
+
